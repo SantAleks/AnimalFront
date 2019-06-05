@@ -28,8 +28,8 @@
 - Создать новое животное;
 - Обновить информацию о животном;
 - удалить животноe.
-  
-Архив с дистрибутивом находится по адресу https://github.com/SantAleks/AnimalFront/blob/Devolop/distr/AnimalFront.7z
+
+Архив с дистрибутивом находится по адресу https://github.com/SantAleks/AnimalFront/blob/master/distr/AnimalFront.7z
 Для запуска необходимо:
 1) распаковать архив;
 2) внутри полученной папки в файле application.properties задать параметры подключения к бэкенд-сервису (backend.port, backend.ip) и порт на котором должен принимать клиентские запросы клиентский сервис (server.port);
@@ -39,42 +39,42 @@
 <p>
 - Запрос всех записей:
 <p>  
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/ВывестиВсех.JPG" alt="Запрос всех записей">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/ВывестиВсех.JPG" alt="Запрос всех записей">
 <p> 
 - Запрос одной записи:
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/ИскатьПоКоду.JPG" alt="Запрос одной записи">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/ИскатьПоКоду.JPG" alt="Запрос одной записи">
 <p> 
 - Поиск по критериям:
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/ПоискПоПараметрам.JPG" alt="Поиск по критериям">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/ПоискПоПараметрам.JPG" alt="Поиск по критериям">
 <p> 
 - Создание новой записи:
 <p> 
   действие
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/СозданиеДействие.JPG" alt="Создание новой записи. Действие">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/СозданиеДействие.JPG" alt="Создание новой записи. Действие">
 <p> 
   результат
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/СозданиеРезультат.JPG" alt="Создание новой записи. Результат">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/СозданиеРезультат.JPG" alt="Создание новой записи. Результат">
 <p> 
 - Обновление записи:
 <p> 
   действие
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/ОбновлениеДействие.JPG" alt="Обновление записи. Действие">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/ОбновлениеДействие.JPG" alt="Обновление записи. Действие">
 <p> 
   результат
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/ОбновлениеРезультат.JPG" alt="Обновление записи. Результат">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/ОбновлениеРезультат.JPG" alt="Обновление записи. Результат">
 <p> 
 - Удаление записи:
 <p> 
   действие
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/УдалениеДействие.JPG" alt="Удаление записи. Действие">
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/УдалениеДействие.JPG" alt="Удаление записи. Действие">
 <p> 
   результат
 <p> 
-  <img src="https://github.com/SantAleks/AnimalFront/blob/Devolop/doc/УдалениеРезультат.JPG" alt="Удаление записи. Результат">  
+  <img src="https://github.com/SantAleks/AnimalFront/blob/master/doc/УдалениеРезультат.JPG" alt="Удаление записи. Результат">  
