@@ -1,26 +1,47 @@
-plugins {
-	id 'org.springframework.boot' version '2.2.0.M3'
-	id 'java'
+buildscript {
+	ext {
+		springBootVersion = '2.1.2.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+
+	}
 }
 
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'application'
+mainClassName = 'com.cherentsov.AnimalFront.server.AnimalFrontApplication'
 
 group = 'com.cherentsov'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+def GWT_VERSION = '2.8.2'
 
 repositories {
 	mavenCentral()
 	maven { url 'https://repo.spring.io/snapshot' }
 	maven { url 'https://repo.spring.io/milestone' }
 }
+sourceSets {
+	main.java.srcDir "src/main/java"
+	main.resources.srcDir "src/main/resources"
+	test.java.srcDir "src/test/java"
+	test.resources.srcDir "src/test/resources"
+}
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-		exclude group: 'junit', module: 'junit'
-	}
+	compileOnly("com.google.gwt:gwt-user:${GWT_VERSION}")
+	compileOnly("com.google.gwt:gwt-dev:${GWT_VERSION}")
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly('org.fusesource.restygwt:restygwt:2.2.3')
+	compile('javax.ws.rs:javax.ws.rs-api:2.1')
 }
 
 test {
