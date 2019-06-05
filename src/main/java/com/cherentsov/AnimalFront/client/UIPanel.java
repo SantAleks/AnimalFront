@@ -10,6 +10,7 @@ import com.google.gwt.user.client.ui.*;
 import org.fusesource.restygwt.client.Method;
 import org.fusesource.restygwt.client.MethodCallback;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UIPanel extends Composite {
@@ -28,9 +29,26 @@ public class UIPanel extends Composite {
     @UiField Button bDelete;
     @UiField Grid gPet;
     @UiField MyStyle style;
+    @UiField SuggestBox sbcName;
+    @UiField ListBox lbcAnimalType;
+    @UiField ListBox lbcSkinColor;
+    @UiField ListBox lbcLocation;
+    @UiField Button bCreate;
+
+    @UiField SuggestBox sbuId;
+    @UiField SuggestBox sbuName;
+    @UiField ListBox lbuAnimalType;
+    @UiField ListBox lbuSkinColor;
+    @UiField ListBox lbuLocation;
+    @UiField Button bUpdate;
     //@UiField HTMLPanel mapPanel;
 
     private int selectIndexGrid = -1;
+    private List<AnimalType> lsAnimalType = new ArrayList<AnimalType>();
+    private List<Location> lsLocation = new ArrayList<Location>();
+    private List<SkinColor> lsSkinColor = new ArrayList<SkinColor>();
+    private List<Pet> lsPet = new ArrayList<Pet>();
+
     private final GwtServiceIntf gwtAppService = GWT.create(GwtServiceIntf.class);
 
     interface UIPanelUiBinder extends UiBinder<HTMLPanel, UIPanel> {
@@ -71,6 +89,8 @@ public class UIPanel extends Composite {
             }
         });
 */
+        initListBox();
+
         bViewAll.addClickHandler(event -> {
                 reciveAll();
         });
@@ -85,6 +105,27 @@ public class UIPanel extends Composite {
 
         bDelete.addClickHandler(event -> {
             delete();
+        });
+
+        bCreate.addClickHandler(event -> {
+            create();
+        });
+
+        bUpdate.addClickHandler(event -> {
+            update();
+        });
+
+        //выбор записи животного мышкой для update
+        gPet.addClickHandler(event -> {
+            selectIndexGrid = gPet.getCellForEvent(event).getRowIndex();
+            if (selectIndexGrid >=1){
+                Pet pet =  lsPet.get(selectIndexGrid-1);
+                sbuId.setText(pet.getId().toString());
+                sbuName.setText(pet.getName());
+                lbuLocation.setSelectedIndex(lsLocation.indexOf(pet.getLocation()));
+                lbuAnimalType.setSelectedIndex(lsAnimalType.indexOf(pet.getAnimalType()));
+                lbuSkinColor.setSelectedIndex(lsSkinColor.indexOf(pet.getSkinColor()));
+            }
         });
     }
 
@@ -175,7 +216,61 @@ public class UIPanel extends Composite {
         });
     }
 
+    private void create() {
+        Pet pet = new Pet(-1L, sbcName.getText(), lsLocation.get(lbcLocation.getSelectedIndex()),
+                lsAnimalType.get(lbcAnimalType.getSelectedIndex()),
+                lsSkinColor.get(lbcSkinColor.getSelectedIndex()));
+
+        gwtAppService.gwtCallServerCreate(pet, new MethodCallback<Void>() {
+            @Override
+            public void onFailure(final Method method, final Throwable exception) {
+                if (exception.getClass().getName().equals("org.fusesource.restygwt.client.FailedResponseException")){
+                    Window.alert("Ошибка. Создать животного не удалось");
+                }
+                else {
+                    Window.alert("Ошибка. Сервер предоставления данных справочника не работает.");
+                }
+            }
+            @Override
+            public void onSuccess(final Method method, final Void result) {
+                Window.alert("Запись о животном создана");
+            }
+        });
+    }
+
+    private void update() {
+        Long lId = 0L;
+        try {
+            lId = Long.parseLong(sbuId.getValue());
+        }
+        catch (Exception e){
+            Window.alert("Ошибка. Направильный код записи. " + e.toString());
+            return;
+        }
+        Pet pet = new Pet(lId, sbuName.getText(), lsLocation.get(lbuLocation.getSelectedIndex()),
+                lsAnimalType.get(lbuAnimalType.getSelectedIndex()),
+                lsSkinColor.get(lbuSkinColor.getSelectedIndex()));
+
+        gwtAppService.gwtCallServerUpdate(pet, new MethodCallback<Void>() {
+            @Override
+            public void onFailure(final Method method, final Throwable exception) {
+                if (exception.getClass().getName().equals("org.fusesource.restygwt.client.FailedResponseException")){
+                    Window.alert("Ошибка. Обновить животного не удалось");
+                }
+                else {
+                    Window.alert(exception.getClass().getName());
+                    Window.alert("Ошибка. Сервер предоставления данных справочника не работает.");
+                }
+            }
+            @Override
+            public void onSuccess(final Method method, final Void result) {
+                Window.alert("Запись о животном обновлена");
+            }
+        });
+    }
+
     private void drawGrid(List<Pet> lPet){
+        lsPet = lPet;
         gPet.clear();
         if (lPet.size()>0){
             gPet.resize(lPet.size()+1, 6);
@@ -208,6 +303,59 @@ public class UIPanel extends Composite {
         else {
             gPet.resize(0,0);
         }
+    }
+
+    //Процедура заполнения листбоксов параметров животных для операций создания и изменения записей
+    private void initListBox() {
+        gwtAppService.gwtCallServerAnimalType("", new MethodCallback<List<AnimalType>>() {
+            @Override
+            public void onFailure(final Method method, final Throwable exception) {
+                Window.alert("Ошибка. Сервер предоставления данных справочника не работает.");
+            }
+
+            @Override
+            public void onSuccess(final Method method, final List<AnimalType> result1) {
+                for(AnimalType i : result1){
+                    lbcAnimalType.addItem(i.getName());
+                    lbuAnimalType.addItem(i.getName());
+                    lsAnimalType.add(i);
+                }
+            }
+        });
+
+        gwtAppService.gwtCallServerLocation("", new MethodCallback<List<Location>>() {
+            @Override
+            public void onFailure(final Method method, final Throwable exception) {
+                Window.alert("Ошибка. Сервер предоставления данных справочника не работает.");
+            }
+
+            @Override
+            public void onSuccess(final Method method, final List<Location> result) {
+                for(Location i : result){
+                    lbcLocation.addItem(i.getName());
+                    lbuLocation.addItem(i.getName());
+                    lsLocation.add(i);
+                }
+            }
+        });
+
+        gwtAppService.gwtCallServerSkinColor("", new MethodCallback<List<SkinColor>>() {
+            @Override
+            public void onFailure(final Method method, final Throwable exception) {
+                Window.alert("Ошибка. Сервер предоставления данных справочника не работает.");
+            }
+
+            @Override
+            public void onSuccess(final Method method, final List<SkinColor> result) {
+                for(SkinColor i : result){
+                    lbcSkinColor.addItem(i.getName());
+                    lbuSkinColor.addItem(i.getName());
+                    lsSkinColor.add(i);
+                }
+            }
+        });
+
+
     }
 }
 

@@ -108,6 +108,58 @@
             </g:HorizontalPanel>
             <g:Button ui:field="bDelete" text="Удалить животное с кодом" styleName="{style.button}"/>
         </g:VerticalPanel>
+        <!-- Create блок -->
+        <g:HTMLPanel>
+            <hr style="width:100%;" />
+        </g:HTMLPanel>
+        <g:VerticalPanel ui:field="VerticalPanelCreate" width="100%">
+            <g:Label text="HTTP POST запрос к /animals с объектом животного в виде JSON создаёт новое животное" styleName="{style.labelBold}"/>
+            <g:HorizontalPanel ui:field="crHorizontalName" width="100%">
+                <g:Label text="Имя/кличка/ИН:" styleName="{style.label}" width="100px"/>
+                <g:SuggestBox ui:field="sbcName" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="crHorizontalAnimalType" width="100%">
+                <g:Label text="Тип животного:" styleName="{style.label}" width="100px"/>
+                <g:ListBox ui:field="lbcAnimalType" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="crHorizontalSkinColor" width="100%">
+                <g:Label text="Цвет шкуры:" styleName="{style.label}" width="100px"/>
+                <g:ListBox ui:field="lbcSkinColor" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="crHorizontalLocation" width="100%">
+                <g:Label text="Местоположение:" styleName="{style.label}" width="100px"/>
+                <g:ListBox ui:field="lbcLocation" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:Button ui:field="bCreate" text="Создать запись" styleName="{style.button}"/>
+        </g:VerticalPanel>
+        <!-- Update блок -->
+        <g:HTMLPanel>
+            <hr style="width:100%;" />
+        </g:HTMLPanel>
+        <g:VerticalPanel ui:field="VerticalPanelUpdate" width="100%">
+            <g:Label text="HTTP PUT запрос к /animals с объектом животного в виде JSON обновляет информацию о животном с id взятым из JSONа" styleName="{style.labelBold}"/>
+            <g:HorizontalPanel ui:field="upHorizontalId" width="100%">
+                <g:Label text="Код БД:" styleName="{style.label}" width="100px"/>
+                <g:SuggestBox ui:field="sbuId" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="upHorizontalName" width="100%">
+                <g:Label text="Имя/кличка/ИН:" styleName="{style.label}" width="100px"/>
+                <g:SuggestBox ui:field="sbuName" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="cuHorizontalAnimalType" width="100%">
+                <g:Label text="Тип животного:" styleName="{style.label}" width="100px"/>
+                <g:ListBox ui:field="lbuAnimalType" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="upHorizontalSkinColor" width="100%">
+                <g:Label text="Цвет шкуры:" styleName="{style.label}" width="100px"/>
+                <g:ListBox ui:field="lbuSkinColor" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:HorizontalPanel ui:field="upHorizontalLocation" width="100%">
+                <g:Label text="Местоположение:" styleName="{style.label}" width="100px"/>
+                <g:ListBox ui:field="lbuLocation" styleName="{style.suggestBox}" width="150px"/>
+            </g:HorizontalPanel>
+            <g:Button ui:field="bUpdate" text="Обновить запись" styleName="{style.button}"/>
+        </g:VerticalPanel>
 
     </g:VerticalPanel>
     <g:VerticalPanel ui:field="srchVerticalPanelPoint" width="100%">

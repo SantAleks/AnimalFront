@@ -7,13 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef272dba-dfaa-4892-a4f1-5f2ee68f0910" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/server/AnimalFrontApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/AnimalFrontApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/AnimalFrontApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/GwtServiceIntf.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/GwtServiceIntf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/client/UIPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/classes/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/0AFDC97680FA6ED79176A1AAFAA67E93.cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/15EE339507F5A4806353ABA4BC8A0245.cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/34B62E73D1CD88750E15F1C84A2F5B35.cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/AA16948FAEB6C55BCEF2BDA2EBAA1398.cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/C0C776DD125C7D324D9C1375FF1D5237.cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/compilation-mappings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gwtApp/compilation-mappings.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gwtApp/gwtApp.nocache.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gwtApp/gwtApp.nocache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -31,32 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -64,23 +59,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
+            <state relative-caret-position="508">
+              <caret line="178" column="55" selection-start-line="178" selection-start-column="55" selection-end-line="178" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="164" column="45" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5810#5811#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,16 +72,51 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="433">
-              <caret line="108" column="39" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="39" />
+              <caret line="160" column="55" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1338#1350#0" expanded="true" />
+                <element signature="e#1407#1417#0" expanded="true" />
+                <element signature="e#1476#1487#0" expanded="true" />
+                <element signature="e#7244#7245#0" expanded="true" />
+                <element signature="e#7283#7284#0" expanded="true" />
+                <element signature="e#7356#7357#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/server/AnimalFrontApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/AnimalFrontApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="100">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -135,13 +152,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/mapfront.gwt.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GTWClient.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/server/AnimalFrontApplicationTests.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -237,6 +255,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="AnimalFront" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalFront" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalFront" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalFront" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -256,7 +289,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559756378037" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559769790225" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lib/gwt-2.8.2/gwt-servlet.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -264,6 +297,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21403913" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\java\AnimalFront\src\test\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -297,6 +335,37 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AnimalFrontApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.cherentsov.AnimalFront.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cherentsov.AnimalFront.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cherentsov.AnimalFront.server" />
+      <option name="MAIN_CLASS_NAME" value="com.cherentsov.AnimalFront.server.AnimalFrontApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnimalFrontApplicationTests.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.cherentsov.AnimalFront.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cherentsov.AnimalFront.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cherentsov.AnimalFront.server" />
+      <option name="MAIN_CLASS_NAME" value="com.cherentsov.AnimalFront.server.AnimalFrontApplicationTests" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnimalFrontApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.cherentsov.AnimalFront.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cherentsov.AnimalFront.server.AnimalFrontApplication" />
@@ -306,6 +375,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AnimalFrontApplicationTests" />
+        <item itemvalue="JUnit.AnimalFrontApplicationTests.main" />
         <item itemvalue="Gradle.AnimalFront [dependencies]" />
       </list>
     </recent_temporary>
@@ -322,12 +393,26 @@
       <updated>1559630692051</updated>
       <workItem from="1559630695540" duration="209000" />
       <workItem from="1559630928867" duration="2588000" />
-      <workItem from="1559720691954" duration="28103000" />
+      <workItem from="1559720691954" duration="39081000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AnimalFrontApplicationTests - 2019.06.06 at 03h 47m 19s.xml">
+      <configuration name="AnimalFrontApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AnimalFrontApplicationTests - 2019.06.06 at 03h 47m 34s.xml">
+      <configuration name="AnimalFrontApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AnimalFrontApplicationTests_main - 2019.06.06 at 03h 49m 00s.xml">
+      <configuration name="AnimalFrontApplicationTests.main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AnimalFrontApplicationTests - 2019.06.06 at 03h 52m 54s.xml">
+      <configuration name="AnimalFrontApplicationTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30900000" />
+    <option name="totallyTimeSpent" value="41878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -341,10 +426,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" sideWeight="0.49947917" visible="true" weight="0.32910052" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49947917" weight="0.32910052" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32910052" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32910052" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/shared/Pet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/shared/SkinColor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -523,20 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="108" column="39" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.fusesource.restygwt/restygwt/2.2.3/1762b3398e99014665c95ac38dc6988c708eaa5c/restygwt-2.2.3-sources.jar!/org/fusesource/restygwt/client/MethodCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -544,27 +605,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/AnimalFrontApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/shared/Pet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="17" />
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.4.RELEASE/1c97085f1052ad3206bafd364eba572d9f7565c2/spring-web-5.1.4.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="468" column="16" selection-start-line="468" selection-start-column="16" selection-end-line="468" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/GwtAppServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
+        <state relative-caret-position="508">
+          <caret line="178" column="55" selection-start-line="178" selection-start-column="55" selection-end-line="178" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/GwtServiceIntf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="160" column="55" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1338#1350#0" expanded="true" />
+            <element signature="e#1407#1417#0" expanded="true" />
+            <element signature="e#1476#1487#0" expanded="true" />
+            <element signature="e#7244#7245#0" expanded="true" />
+            <element signature="e#7283#7284#0" expanded="true" />
+            <element signature="e#7356#7357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cherentsov/AnimalFront/server/AnimalFrontApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -573,19 +680,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/server/AnimalFrontApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="100">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cherentsov/AnimalFront/client/UIPanel.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="164" column="45" selection-start-line="164" selection-start-column="45" selection-end-line="164" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5810#5811#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

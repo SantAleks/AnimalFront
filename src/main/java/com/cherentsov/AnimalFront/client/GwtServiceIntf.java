@@ -23,4 +23,24 @@ public interface GwtServiceIntf extends RestService {
     @PUT
     @Path("delete")
     public void gwtCallServerDelete(final Long lId, MethodCallback<Void> callback) throws IllegalArgumentException;
+
+    @GET
+    @Path("getAnimalType")
+    public void gwtCallServerAnimalType(final String sRequest, MethodCallback<List<AnimalType>> callback) throws IllegalArgumentException;
+
+    @GET
+    @Path("getLocation")
+    public void gwtCallServerLocation(final String sRequest, MethodCallback<List<Location>> callback) throws IllegalArgumentException;
+
+    @GET
+    @Path("getSkinColor")
+    public void gwtCallServerSkinColor(final String sRequest, MethodCallback<List<SkinColor>> callback) throws IllegalArgumentException;
+
+    @PUT
+    @Path("create")
+    public void gwtCallServerCreate(final Pet pet, MethodCallback<Void> callback) throws IllegalArgumentException;
+
+    @PUT
+    @Path("update")
+    public void gwtCallServerUpdate(final Pet pet, MethodCallback<Void> callback) throws IllegalArgumentException;
 }

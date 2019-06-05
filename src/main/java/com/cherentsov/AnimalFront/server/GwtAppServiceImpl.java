@@ -59,8 +59,8 @@ public class GwtAppServiceImpl {
 
         //RestTemplate restTemplate = new RestTemplate();
         List<Pet> result = restTemplate.getForObject(uri.toString(), List.class);
-        logger.info("Результат запроса к бэкэнду: " + result);
-        logger.info("Количество сущностей в ответе от бэкенда: " + result.size());
+        logger.debug("Результат запроса к бэкэнду: " + result);
+        logger.debug("Количество сущностей в ответе от бэкенда: " + result.size());
 
         return new ResponseEntity<List<Pet>>(result, HttpStatus.OK);
     }
@@ -76,7 +76,7 @@ public class GwtAppServiceImpl {
         if (result != null) {
             lResult.add(result);
         }
-        logger.info("Результат запроса к бэкэнду: " + result);
+        logger.debug("Результат запроса к бэкэнду: " + result);
 
         return new ResponseEntity<List<Pet>>(lResult, HttpStatus.OK);
     }
@@ -90,7 +90,7 @@ public class GwtAppServiceImpl {
         //RestTemplate restTemplate = new RestTemplate();
         List<Pet> result = restTemplate.getForObject(uri.toString(), List.class);
 
-        logger.info("Результат запроса к бэкэнду: " + result);
+        logger.debug("Результат запроса к бэкэнду: " + result);
 
         return new ResponseEntity<List<Pet>>(result, HttpStatus.OK);
     }
@@ -110,4 +110,72 @@ public class GwtAppServiceImpl {
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/gwtApp/getAnimalType", method = GET)
+    public ResponseEntity<List<AnimalType>> getAnimalType() {
+
+        StringBuilder uri = new StringBuilder("http://");
+        uri.append(ip).append(":").append(port).append("/animaltype");
+
+        //RestTemplate restTemplate = new RestTemplate();
+        List<AnimalType> result = restTemplate.getForObject(uri.toString(), List.class);
+        logger.debug("Результат запроса к бэкэнду: " + result);
+        logger.debug("Количество сущностей в ответе от бэкенда: " + result.size());
+
+        return new ResponseEntity<List<AnimalType>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/gwtApp/getLocation", method = GET)
+    public ResponseEntity<List<Location>> getLocation() {
+        StringBuilder uri = new StringBuilder("http://");
+        uri.append(ip).append(":").append(port).append("/location");
+
+        //RestTemplate restTemplate = new RestTemplate();
+        List<Location> result = restTemplate.getForObject(uri.toString(), List.class);
+        logger.debug("Результат запроса к бэкэнду: " + result);
+        logger.debug("Количество сущностей в ответе от бэкенда: " + result.size());
+
+        return new ResponseEntity<List<Location>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/gwtApp/getSkinColor", method = GET)
+    public ResponseEntity<List<SkinColor>> getSkinColor() {
+
+        StringBuilder uri = new StringBuilder("http://");
+        uri.append(ip).append(":").append(port).append("/skincolor");
+
+        //RestTemplate restTemplate = new RestTemplate();
+        List<SkinColor> result = restTemplate.getForObject(uri.toString(), List.class);
+        logger.debug("Результат запроса к бэкэнду: " + result);
+        logger.debug("Количество сущностей в ответе от бэкенда: " + result.size());
+
+        return new ResponseEntity<List<SkinColor>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/gwtApp/create", method = PUT)
+    public ResponseEntity<Void> create(@RequestBody final Pet pet) {
+        StringBuilder uri = new StringBuilder("http://");
+        uri.append(ip).append(":").append(port).append("/animals/");
+        //RestTemplate restTemplate = new RestTemplate();
+        try{
+            restTemplate.postForObject(uri.toString(), pet, Pet.class);
+        }
+        catch(HttpServerErrorException e){
+            return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<Void>(HttpStatus.CREATED);
+    }
+
+    @RequestMapping(value = "/gwtApp/update", method = PUT)
+    public ResponseEntity<Void> update(@RequestBody final Pet pet) {
+        StringBuilder uri = new StringBuilder("http://");
+        uri.append(ip).append(":").append(port).append("/animals/");
+        //RestTemplate restTemplate = new RestTemplate();
+        try{
+            restTemplate.put(uri.toString(), pet);
+        }
+        catch(HttpServerErrorException e){
+            return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<Void>(HttpStatus.OK);
+    }
 }
